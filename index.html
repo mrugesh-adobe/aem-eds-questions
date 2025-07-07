@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEM EDS Interview Prep</title>
+    <meta name="description" content="Prepare for Adobe Experience Manager (AEM) Edge Delivery Services interviews with this comprehensive guide.">
+    <link rel="stylesheet" href="css/adobe-fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body class="spectrum spectrum--medium spectrum--light">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://placehold.co/32x32/FA0F00/FFFFFF?text=AEM" alt="AEM Logo" class="logo">
+                    <h1 class="site-title">AEM EDS Interview Prep</h1>
+                </div>
+                <div class="header-actions">
+                    <button id="mobile-menu-toggle" class="spectrum-Button spectrum-Button--primary spectrum-Button--quiet">
+                        <span class="spectrum-Button-label">Menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <h2 class="spectrum-Heading spectrum-Heading--sizeM">Questions</h2>
+                    <button id="sidebar-close" class="spectrum-Button spectrum-Button--primary spectrum-Button--quiet mobile-only">
+                        <span class="spectrum-Button-label">×</span>
+                    </button>
+                </div>
+                
+                <nav class="spectrum-SideNav">
+                    <!-- Easy Questions Category -->
+                    <div class="question-category">
+                        <div class="category-header" data-category="easy">
+                            <span class="spectrum-SideNav-heading">Easy</span>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <ul class="spectrum-SideNav-itemGroup" id="easy-questions">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Medium Questions Category -->
+                    <div class="question-category">
+                        <div class="category-header" data-category="medium">
+                            <span class="spectrum-SideNav-heading">Medium</span>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <ul class="spectrum-SideNav-itemGroup" id="medium-questions">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Hard Questions Category -->
+                    <div class="question-category">
+                        <div class="category-header" data-category="hard">
+                            <span class="spectrum-SideNav-heading">Hard</span>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <ul class="spectrum-SideNav-itemGroup" id="hard-questions">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="content" id="content">
+                <div class="welcome-screen" id="welcome-screen">
+                    <h2 class="spectrum-Heading spectrum-Heading--sizeXL">Welcome to AEM EDS Interview Prep</h2>
+                    <p class="spectrum-Body spectrum-Body--sizeL">Select a question from the sidebar to get started.</p>
+                    
+                    <div class="feature-cards">
+                        <div class="spectrum-Card">
+                            <div class="spectrum-Card-body">
+                                <div class="spectrum-Card-header">
+                                    <h3 class="spectrum-Card-title">What is AEM EDS?</h3>
+                                </div>
+                                <div class="spectrum-Card-content">
+                                    <p>Learn about Adobe Experience Manager Edge Delivery Services and how it differs from traditional AEM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spectrum-Card">
+                            <div class="spectrum-Card-body">
+                                <div class="spectrum-Card-header">
+                                    <h3 class="spectrum-Card-title">Block Architecture</h3>
+                                </div>
+                                <div class="spectrum-Card-content">
+                                    <p>Understand the block-based architecture that powers EDS sites and content delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="spectrum-Card">
+                            <div class="spectrum-Card-body">
+                                <div class="spectrum-Card-header">
+                                    <h3 class="spectrum-Card-title">Edge Workers</h3>
+                                </div>
+                                <div class="spectrum-Card-content">
+                                    <p>Explore how Edge Workers enable dynamic functionality at the CDN level.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-content" id="question-content" style="display: none;">
+                    <!-- Will be populated by JavaScript when a question is selected -->
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 AEM EDS Interview Prep | <a href="https://github.com/your-username/aem-eds-interview-prep" target="_blank">GitHub</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
