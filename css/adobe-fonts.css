@@ -1,105 +1,99 @@
 /* 
  * AEM EDS Interview Prep
- * Adobe Fonts Integration
+ * System Fonts (No External Fonts)
  */
 
-/* Adobe Clean Font */
-@import url("https://use.typekit.net/af/cb695f/000000000000000000017701/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
-@import url("https://use.typekit.net/af/74ffb1/000000000000000000017702/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3");
-@import url("https://use.typekit.net/af/eaf09c/000000000000000000017703/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3");
-@import url("https://use.typekit.net/af/40207f/0000000000000000000176ff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3");
+/* 
+ * This file replaces Adobe Fonts with system fonts
+ * to avoid 404 errors while maintaining the UI appearance
+ */
 
-/* Adobe Clean Serif Font */
-@import url("https://use.typekit.net/af/505d17/00000000000000003b9aee44/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3");
-@import url("https://use.typekit.net/af/c0ec31/00000000000000003b9aee42/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3");
-@import url("https://use.typekit.net/af/53c62d/00000000000000003b9aee3f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+/* Font Family Definitions using System Fonts */
 
-/* Source Code Pro for code blocks */
-@import url("https://use.typekit.net/af/422d8c/00000000000000003b9b2393/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
-@import url("https://use.typekit.net/af/9c4f2e/00000000000000003b9b2394/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3");
-
-/* Font Declarations */
+/* Main Sans-Serif Font (replacing adobe-clean) */
 @font-face {
     font-family: "adobe-clean";
-    src: url("https://use.typekit.net/af/cb695f/000000000000000000017701/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");
-    font-display: swap;
+    src: local("Segoe UI"), local("Helvetica Neue"), local("Arial");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "adobe-clean";
-    src: url("https://use.typekit.net/af/74ffb1/000000000000000000017702/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2");
-    font-display: swap;
+    src: local("Segoe UI Italic"), local("Helvetica Neue Italic"), local("Arial Italic");
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "adobe-clean";
-    src: url("https://use.typekit.net/af/eaf09c/000000000000000000017703/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");
-    font-display: swap;
+    src: local("Segoe UI Bold"), local("Helvetica Neue Bold"), local("Arial Bold");
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "adobe-clean";
-    src: url("https://use.typekit.net/af/40207f/0000000000000000000176ff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2");
-    font-display: swap;
+    src: local("Segoe UI Light"), local("Helvetica Neue Light"), local("Arial Light");
     font-style: normal;
     font-weight: 300;
 }
 
+/* Serif Font (replacing adobe-clean-serif) */
 @font-face {
     font-family: "adobe-clean-serif";
-    src: url("https://use.typekit.net/af/505d17/00000000000000003b9aee44/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2");
-    font-display: swap;
+    src: local("Georgia Bold"), local("Times New Roman Bold");
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: "adobe-clean-serif";
-    src: url("https://use.typekit.net/af/c0ec31/00000000000000003b9aee42/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");
-    font-display: swap;
+    src: local("Georgia Bold"), local("Times New Roman Bold");
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "adobe-clean-serif";
-    src: url("https://use.typekit.net/af/53c62d/00000000000000003b9aee3f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");
-    font-display: swap;
+    src: local("Georgia"), local("Times New Roman");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Monospace Font (replacing source-code-pro) */
+@font-face {
+    font-family: "source-code-pro";
+    src: local("Consolas"), local("Monaco"), local("Courier New");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "source-code-pro";
-    src: url("https://use.typekit.net/af/422d8c/00000000000000003b9b2393/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "source-code-pro";
-    src: url("https://use.typekit.net/af/9c4f2e/00000000000000003b9b2394/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");
-    font-display: swap;
+    src: local("Consolas Bold"), local("Monaco Bold"), local("Courier New Bold");
     font-style: normal;
     font-weight: 700;
 }
 
-/* Fallback Font Strategy */
+/* Font Family Assignments */
 body {
-    font-family: adobe-clean, 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 code, pre, .code-block {
-    font-family: source-code-pro, 'Source Code Pro', 'Courier New', monospace;
+    font-family: Consolas, Monaco, "Courier New", monospace;
 }
 
 .serif {
-    font-family: adobe-clean-serif, 'Source Serif Pro', Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Typography Adjustments */
+.spectrum-Heading {
+    letter-spacing: -0.02em;
+}
+
+.spectrum-Body {
+    line-height: 1.6;
 }

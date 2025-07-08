@@ -258,6 +258,47 @@ a:hover {
     margin-bottom: 24px;
 }
 
+/* Fix for list bullet points going outside container padding */
+.question-answer ul,
+.question-answer ol {
+    padding-left: 24px;
+    margin-left: 0;
+    margin-bottom: 16px;
+}
+
+.question-answer ul li,
+.question-answer ol li {
+    margin-bottom: 8px;
+}
+
+/* Ensure nested lists are properly indented */
+.question-answer ul ul,
+.question-answer ol ol,
+.question-answer ul ol,
+.question-answer ol ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Fix for tables in question content */
+.question-answer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.question-answer th,
+.question-answer td {
+    border: 1px solid var(--adobe-gray);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.question-answer th {
+    background-color: var(--adobe-light-gray);
+    font-weight: 600;
+}
+
 .code-block {
     background-color: #f8f8f8;
     border: 1px solid #e0e0e0;
